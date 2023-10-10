@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Інтернет магазин електронних приладів</title>
+</head>
+<body>
+    <header>
+        <h1>Інтернет магазин електронних приладів</h1>
+    </header>
+    <main>
+        <div class="filter">
+            <h2>Фільтри</h2>
+            <label for="priceRange">Ціна:</label>
+            <input type="range" id="priceRange" min="0" max="2000" step="100" value="2000">
+            <span id="priceLabel">2000$</span><br><br>
+            <label for="searchInput">Пошук за назвою:</label>
+            <input type="text" id="searchInput" placeholder="Пошук..."><br><br>
+            <label for="categorySelect">Сортувати за типом товару:</label>
+            <select id="categorySelect">
+                <option value="all">Усі товари</option>
+                <option value="годинники">Годинники</option>
+                <option value="телефони">Телефони</option>
+                <option value="планшети">Планшети</option>
+                <option value="ноутбуки">Ноутбуки</option>
+            </select>
+        </div>
+        <div class="products" id="productList">
+           
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
